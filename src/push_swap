@@ -3,17 +3,29 @@ Cosas que realizar en el push_swap
 1-	Todo el parseo de datos, es decir, controlar la entrada de datos, que puede ser cada uno de los valores por separado(distintos argumentos) ó 
 	en una única cadena de caracteres, que yo tengo que separar y convertir a números(para esto quiero usar el split y el atoi). Los números
 	los debería meter en un array de enteros,(y si es de dos dimensiones y le doy un valor uno para poder comprobar que no se repitan los números?)
+	1.0 tengo que controlar si hay signos entre medios y si hay letras, si hay letras, no es valido, si hay signos entre medios, no es valido
+		comprobar todo el valor de la cadena de caracteres, si hay un signo, no es valido, si hay una letra, no es valido, si hay un espacio, no es valido
+	1.1 el parseo al recibir varios argumentos esta listo 
+
+	1.2 el parseo al recibir un solo argumento falta por hacer
+		-	Primero tengo que separar los números, para eso tengo que usar el split y separar tod aquello que este dividido por comas, y los metemos en un array de carcteres,
+		aqui lo que tendriamos es un monton de cadenas, despues de este punto limpiamos las comas y lo tratamos como lo que ya hemos echo en el punto 1.1
+		listo
 
 2-	Una vez que tenga separado los números y los valores de la entrada sean correctos, se supone que se vuelcan en una lista de enteros(stack a), aunque 
-	puede que los números esten desordenados.
+	puede que los números esten desordenados. listo
 
 3-	Aquí viene la segunda parte del problema, consiste en el algoritmo de ordenación, vamos a subdividirlo.
 
 	3.10-	Por un lado tenemos que ordenarlo fuera de lo que tenemos permitido y darle un índice a los valores que queremos que posean, ese va a ser
 			nuestro objetivo a lograr.
+			3.1.1-	Primero tenemos que ordenarlos, para eso vamos a usar el algoritmo de ordenación de burbuja, que consiste en comparar el primer valor
+					con el segundo, si el primero es mayor que el segundo, los intercambiamos, si no, pasamos al siguiente, y así hasta que esten ordenados.eso lo guardaremos en un array de enteros
 	3.20-	Por otro lado tendremos que implementar cada una de las operaciones que tenemos permitido usar(sa, sb, ss, pa, pb, ra, rb, rr, rra,rrb, rrr)
 			para así porder llamarlos a la hora de ordenarlo
 	3.30-	Ahora toca ordenarlo, esto lo dividiremos en 2 casos distintos, para 3 números y para muchos más de 3 números, también meter las excepciones de
 			dos números, un número y sin números. 
-Hola a todos
-que tal?
+
+
+como voy a poner la organizacion del parseo, en un principio, si es mayor o igual, dentro de eso compruebo que para si son 2 argumentos, hacerles el split y meter los datos en un array,
+si tengo mas los compruebo de 1 en 1 si estan bien, 
