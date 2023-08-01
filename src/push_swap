@@ -15,6 +15,14 @@ Cosas que realizar en el push_swap
 2-	Una vez que tenga separado los números y los valores de la entrada sean correctos, se supone que se vuelcan en una lista de enteros(stack a), aunque 
 	puede que los números esten desordenados. listo
 
+
+	TENGO QUE CORREGUIR QUE SE TRAGA EL 04 4 listo
+	-------------opciones 
+		podemos jugar con las listas enlazadas o con los arrays, en un principio voy a usar los arrays, ya que me parece mas sencillo, peero ahora no estoy tan seguro, que necesitaria para hacer un algoritmo por costes,
+		1: funciones basicas para moverme por la lista, como añadir un elemento, borrar un elemento, moverme por la lista, si la lista esta vacia, si la lista esta llena, si la lista esta ordenada, si la lista esta desordenada
+		2: funciones para ordenar la lista y asignarle un indice a cada elemento, para poder saber donde esta cada elemento, y poder hacer las operaciones de ordenacion, una vez que tenga 
+
+		
 3-	Aquí viene la segunda parte del problema, consiste en el algoritmo de ordenación, vamos a subdividirlo.
 
 	3.10-	Por un lado tenemos que ordenarlo fuera de lo que tenemos permitido y darle un índice a los valores que queremos que posean, ese va a ser
@@ -29,3 +37,16 @@ Cosas que realizar en el push_swap
 
 como voy a poner la organizacion del parseo, en un principio, si es mayor o igual, dentro de eso compruebo que para si son 2 argumentos, hacerles el split y meter los datos en un array,
 si tengo mas los compruebo de 1 en 1 si estan bien, 
+
+
+resumen de lo que llevo hecho 
+1- Parseo de ambas formas de recibir los datos
+2- Todas las funciones de movimiento de la lista
+
+Lo que queda por hacer:
+1- asignarles un valor de ordenacion de menor a mayor(abajo los numeros mas grandes), es decir ordenarlos
+2- una vez que tenga un un indice para cada numero, ya sabemos como deben quedar esos numeros, dividiendo el numero total de numeros de la pila entre 2,
+ y si el numero es menor que la mitad, lo muevo a la pila b, si es mayor lo dejo en la pila a. Así hasta que tenga tres numeros. una vez tenga 3 el resto lo mando a la otra pila
+3- cuando solo tenga 3 numeros en la pila a los ordeno de menor a mayor, es decir loa numeros mas altos al fondo de la pila.
+4- una vez que los tenga ordenado tengo que ver que numero parar de la pila b hacia la a(el algoritmo de costos)
+5 -Una vez decidido el numero solo tengo que ordenarlo en la pila a y despues repetimos hasta que la pila b este vacia, y la a ordenada
