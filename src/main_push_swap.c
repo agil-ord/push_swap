@@ -19,7 +19,6 @@ int	ft_correct_input(char **cadena)
 
 	i = 0;
 	n_zeros = 0;
-	ft_printf("\nEntra a correct input\n");
 	while (cadena[i])
 	{
 		if (!ft_is_num(cadena[i]))
@@ -66,29 +65,20 @@ int	main(int ac, char **av)
 			}
 		}
 		if (ft_correct_input(array_stack_other))
-		{
-			ft_printf("\nProbando nuevo main\n");
 			valido = 1;
-		}
 		j = 0;
 		if (valido == 1)
 		{	
 			while (array_stack_other[j])
 			{
 				array_stack_a[j] = ft_atol_push(array_stack_other[j]);
-				printf("\n%d\n", array_stack_a[j]);
 				j++;
 			}
 			valido = 0;
 		}
-		ft_printf("\nUltima comprobacion de duplicados\n");
 		if (ft_n_duplicate(array_stack_a, j))
 			return (ft_printf("\nError en comprobar duplicados segunda vez"), 0);
-		ft_printf("\nTermina bien\n");
 	}
 	else
-	{
-		ft_printf("\nError\n");
 		return (0);
-	}
 }
