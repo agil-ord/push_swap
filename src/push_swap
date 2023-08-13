@@ -54,3 +54,6 @@ lo primero es ordenar lo que llevo y ver si ya hace cosas.
 2- cuando solo tenga 3 numeros en la pila a los ordeno de menor a mayor, es decir loa numeros mas altos al fondo de la pila.
 3- una vez que los tenga ordenado tengo que ver que numero parar de la pila b hacia la a(el algoritmo de costos)
 4 -Una vez decidido el numero solo tengo que ordenarlo en la pila a y despues repetimos hasta que la pila b este vacia, y la a ordenada
+
+
+tema de parseo actualizarlo con un join de los numeros y despues hacer el split, y despues comprobar que no hay letras ni signos, y despues comprobar que no se repiten los numeros

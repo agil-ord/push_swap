@@ -6,7 +6,7 @@
 #    By: agil-ord <agil-ord@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/08 20:13:59 by agil-ord          #+#    #+#              #
-#    Updated: 2023/07/08 18:45:29 by agil-ord         ###   ########.fr        #
+#    Updated: 2023/08/13 18:00:04 by agil-ord         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ NAME	=	push_swap
 
 DIR_PUSH_SWAP = ./src
 
-SRC_PUSH_SWAP =	push_swap.c main_push_swap.c
+SRC_PUSH_SWAP =	push_swap.c  func_utils_parser.c func_utils_parser2.c funciones_mov_utils.c funciones_mov.c funciones_mov2.c 
 
 SRCS		=	${addprefix ${DIR_PUSH_SWAP}/,${SRC_PUSH_SWAP}}
 
