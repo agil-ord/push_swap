@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   pruebas_push.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: agil-ord <agil-ord@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/13 17:45:44 by agil-ord          #+#    #+#             */
-/*   Updated: 2023/08/14 16:25:51 by agil-ord         ###   ########.fr       */
+/*   Updated: 2023/08/13 17:57:06 by agil-ord         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,42 +57,6 @@ char **create_stack_other(int ac, char **av)
 		}
 	}
 	return (array_stack_other);
-}
-
-int ft_init_algo(t_stack *stack_a)
-{
-	t_stack *stack_b;
-	int flag;
-
-	flag = 0;
-	stack_b = NULL;
-	if (ft_is_sorted(stack_a))
-	{
-		ft_printf("\nEsta ordenado\n");
-		return (1);
-	}
-	if (ft_lstsize_push(stack_a) == 2)
-	{
-		ft_sort_two(stack_a);
-		return (1);
-	}
-	return (0);
-}
-
-int ft_is_sorted(t_stack *stack_a)
-{
-	t_stack *tmp;
-
-	tmp = stack_a;
-	while (tmp->next)
-	{
-		if (tmp->index > tmp->next->index)
-			//ft_printf("\nNO ordenado\n");
-			return (ft_printf("\nNO ordenado\n") ,0);
-		tmp = tmp->next;
-	}
-	//ft_printf("\nEsta ordenado\n");
-	return (ft_printf("\nesta ordenado\n"), 1);
 }
 
 //funcion que represente al bucle while de la funcion principal
